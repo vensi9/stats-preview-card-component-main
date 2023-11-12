@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    Font-size: 1vw !important;
+    background-color: hsl(233, 47%, 7%);
+}
+
+span {
+    color: hsl(277, 64%, 61%)
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: hsl(244, 38%, 16%);
+    padding: 55px 80px;
+    width: 40vw;
+    gap: 3.5rem;
+    height: 70vh;
+    border-radius: 5px 0 0 5px;
+}
+
+.heading,
+.content_text {
+    font-family: Inter;
+}
+
+.heading {
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 1.1px;
+    line-height: 1.2;
+    font-size: 2.3vw !important;
+    font-weight: 700;
+    text-wrap: wrap;
+    /* padding-right: 3vw; */
+    margin-top: 0;
+}
+
+.content_text {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.9;
+    padding: 0 122px 0 0;
+    letter-spacing: 0.1px;
+    font-size:1.02vw !important;
+    font-weight: 400;
+    width: 35vw;
+
+}
+
+.business_details {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.counting {
+    font-family: Inter;
+    color: hsl(0, 0%, 100%);
+    margin: 7px 0;
+    letter-spacing: 1px;
+    font-size: 1.7vw;
+}
+
+.unit {
+    color: hsla(0, 0%, 100%, 0.6);
+    margin: 0;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    font-family: Lexend Deca;
+    font-weight: 400;
+    font-size: 1vw;
+}
+
+/* .img{width: 50vw;} */
+.image {
+    position: relative;
+    width: 40vw;
+    height: 70vh;
+    background: url(./images/image-header-desktop.jpg) no-repeat center/cover;
+    border-radius: 0 5px 5px 0;
+}
+
+.image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(277, 64%, 61%);
+    mix-blend-mode: multiply;
+}
+
+
+@media (max-width: 375px) {
+    .image {
+        background: url(./images/image-header-mobile.jpg) no-repeat center/cover;
+        width: auto;
+        height: 100vh;
+    }
+}
