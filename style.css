@@ -31,6 +31,12 @@ body {
     background: hsl(244, 38%, 16%);
 }
 
+.flex-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7vw;
+}
+
 .heading,
 .content_text,
 .counting {
@@ -179,6 +185,10 @@ span {
             justify-content: center;
             align-items: center;
             flex-direction: column-reverse;
+        }
+
+        .flex-content {
+            gap: 4vw;
         }
 
         .content_text {
